@@ -151,5 +151,5 @@ Thanks for reading!
 
 ### 9. Misc
 
-I also wrote this post like a <a href='{{ site.baseurl }}/assets/pdf/Datasets_Blog_post.pdf'>research paper</a> too. Research papers can be hard to read so I won't write my blog posts like that, but I wanted to practice my writing skills (and latex formatting does look pretty)!!
+I also wrote this post like a <a href='{{ site.baseurl }}/assets/pdf/Datasets_Blog_Post.pdf'>research paper</a> too. Research papers can be hard to read so I won't write my blog posts like that, but I wanted to practice my writing skills (and latex formatting does look pretty)!!
 
