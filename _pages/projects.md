@@ -1,48 +1,23 @@
 ---
-layout: page
+layout: default
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
 ---
 
-{% for project in site.projects %}
-
-{% if project.redirect %}
-<div class="project">
-    <div class="thumbnail">
-        <a href="{{ project.redirect }}" target="_blank">
-        {% if project.img %}
-        <img class="thumbnail" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}"/>
-        {% else %}
-        <div class="thumbnail blankbox"></div>
-        {% endif %}    
-        <span>
-            <h1>{{ project.title }}</h1>
-            <br/>
-            <p>{{ project.description }}</p>
-        </span>
-        </a>
-    </div>
-</div>
-{% else %}
-
-<div class="project ">
-    <div class="thumbnail">
-        <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">
-        {% if project.img %}
-        <img class="thumbnail" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}"/>
-        {% else %}
-        <div class="thumbnail blankbox"></div>
-        {% endif %}    
-        <span>
-            <h1>{{ project.title }}</h1>
-            <br/>
-            <p>{{ project.description }}</p>
-        </span>
-        </a>
-    </div>
+<div class="header-bar">
+  <h1>My Pet Projects</h1>
+  <h2>Don't look too closely, I'm not too interesting :sweat_smile:</h2>
 </div>
 
-{% endif %}
+<ul class="post-list">
+ {% assign sorted = (site.projects | sort: 'date') | reverse %}
+  {% for project in sorted %}
+    <li>
+      <h4><a class="post-title" href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">{{ project.title }}</a></h4>
+      <p class="post-meta">{{ project.date | date: '%B %-d, %Y — %H:%M' }}</p>
+      <p>{{ project.description }}</p>
+    </li>
+  {% endfor %}
+</ul>
 
-{% endfor %}
+{% include pagination.html %}
