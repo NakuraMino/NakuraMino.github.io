@@ -6,11 +6,11 @@ permalink: /projects/
 
 <div class="header-bar">
   <h1>My Pet Projects</h1>
-  <h2>Don't look too closely, I'm not too interesting :sweat_smile:</h2>
+  <h2>Oh no I'm embarrassed :sweat_smile:</h2>
 </div>
 
 <ul class="post-list">
- {% assign sorted = (site.projects | sort: 'date') | reverse %}
+ {% assign sorted = site.projects | sort: 'date' | reverse %}
   {% for project in sorted %}
     <li>
       <h4><a class="post-title" href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">{{ project.title }}</a></h4>

@@ -11,9 +11,9 @@ I began my Deep Learning journey a few months ago when the [robotics course](htt
 
 The reality of Deep Learning turned out to be much harder. Neural networks can only readily outperform traditional machine learning methods because of the large amount of data available to practitioners. Therefore, it is just as crucial to thoroughly inspect your data set before designing and training your neural networks. Andrej Karpathy has a [nice little bit](http://karpathy.github.io/2019/04/25/recipe/) on how to analyze your data, but these explanations can be hard to understand without concrete examples for readers to follow. 
 
-In this post, I hope to supplement Karpathy's advice with a case study on how to inspect data (definitely give his [post](http://karpathy.github.io/2019/04/25/recipe/) a read before you proceed). To this end, I will present a hypothetical problem and a data set for the you to think through. This post will also try to emphasize ways for recognize patterns and problems with data. Lastly, we will also consider ways to smartly interact and augment the data for this toy problem.
+In this post, I hope to supplement Karpathy's advice with a case study on how to inspect data (definitely give his [post](http://karpathy.github.io/2019/04/25/recipe/) a read before you proceed). To this end, I will present a hypothetical problem and a data set for you to think through. This post will also try to emphasize how to recognize patterns and problems with data. Lastly, we will also consider ways to smartly interact and augment the data for this toy problem.
 
-(I also frame this as a data generation problem because I believe it could give you better intuition on the things to look out for)
+(I also frame this as a data generation problem because I believe it can give you better intuition on the things to look out for)
 
 ### 2. The (Hypothetical) Problem and Background
 
