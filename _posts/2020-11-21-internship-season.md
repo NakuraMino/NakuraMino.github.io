@@ -5,7 +5,7 @@ date: 2020-11-21 19:13:00-0400
 description: Recruitment is stressful. Here's how I got through it.
 ---
 
-<img src='/assets/img/sankey2021.jpg' width='100%'>
+<img src='/assets/img/sankey2021.JPG' width='100%'>
 <div class="col three caption">
     A visual representation of my 2021 internship hunt
 </div> 
