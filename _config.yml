@@ -45,7 +45,7 @@ google_analytics: UA-168938006 # out your google-analytics code
 # Blog
 # -----------------------------------------------------------------------------
 blog_name: My Blog # al-folio
-blog_description: Oh no I'm embarrassed.
+blog_description: Oh no I'm embarrassed
 
 # Pagination
 paginate: 4
