@@ -6,7 +6,7 @@ permalink: /projects/
 
 <div class="header-bar">
   <h1>My Pet Projects</h1>
-  <h2>Oh no I'm embarrassed</h2>
+  <h2>It ain't much, but it's honest work</h2>
 </div>
 
 <ul class="post-list">

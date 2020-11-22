@@ -45,7 +45,7 @@ google_analytics: UA-168938006 # out your google-analytics code
 # Blog
 # -----------------------------------------------------------------------------
 blog_name: My Blog # al-folio
-blog_description: Welcome to my hidden blog! I'm embarrassed you found this.
+blog_description: Oh no I'm embarrassed.
 
 # Pagination
 paginate: 4
@@ -96,6 +96,7 @@ exclude:
   - _pages/publications.md
   - _pages/box_projects.md
   - _projects/demo*
+  - _posts/2015*
 
 # Plug-ins
 plugins:

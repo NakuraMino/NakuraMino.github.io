@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Neural Network-based Algorithms for Motion Planning
-date: 2020-06-11 10:00:00
+date: 2020-06-12 1:31:00
 description: Using Deep Learning to imitate traditional planning algorithms.
 ---
 

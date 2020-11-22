@@ -5,4 +5,4 @@ inline: true
 ---
 
 Our [paper](https://hcrlab.cs.washington.edu/assets/pdfs/2020/chung2020concodeit.pdf) on block-based 
-concurrency interfaces was accepted to RO-MAN 2020!  
+concurrency interfaces was accepted to RO-MAN 2020!

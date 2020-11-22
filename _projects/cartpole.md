@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CartpoleNet
-date: 2020-05-10 14:30:00
+date: 2020-05-10 19:50:00
 description: A CSE 571 Project, and my first experience with Deep Learning.
 ---
 <center>
