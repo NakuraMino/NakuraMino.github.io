@@ -12,6 +12,7 @@ on the kind of person I am!
 ___
 #### Sometimes I Help Teach Courses
 
+- [CSE 473 Winter 2021](https://courses.cs.washington.edu/courses/cse473/21wi/)
 - [CSE 143 Winter 2020](https://courses.cs.washington.edu/courses/cse143/20wi/staff.shtml)
 - [CSE 143 Autumn 2019](https://courses.cs.washington.edu/courses/cse143/19au/staff.shtml)
 - [CSE 142 Summer 2019](https://courses.cs.washington.edu/courses/cse142/19su/staff.shtml)
@@ -21,17 +22,16 @@ ___
 ___
 #### Favorite Short Reads
 
-I find it really hard for me to form my own opinions, especially when I'm still ignorant about so many things. 
+I find it really hard for me to form my own opinions, especially when I still don't know much about so many things. 
 Here are some blogs and articles that helped shape how I think.
 
 - [The Survivor's Guide to Adulthood](https://yaledailynews.com/blog/2017/04/28/the-survivors-guide-to-adulthood/): I found this 
 article right as I was about to enter college. I'm not really sure if I agree with the overall message, but, reading it as a college
 senior, I'm starting to question what kind of adult I want to become. 
-<!-- - [Violence and the Sacred: College as an incubator of Girardian terror](https://danwang.co/college-girardian-terror/): I wish I read this before I entered college. Sometimes I feel I got too caught up in the competition that I didn't make the most of my education. -->
 - [The Egg](http://www.galactanet.com/oneoff/theegg_mod.html): If you only read one thing from this list, make it this one. It's 
 beautifully written and probably really deep. Frankly, I still don't know what any of it means, so let me know if you think you have
 the answer.
-- [A Survival Guide to a PhD](http://karpathy.github.io/2016/09/07/phd/): Lately I've been contemplating what life as a PhD student 
+- [A Survival Guide to a PhD](http://karpathy.github.io/2016/09/07/phd/): At one point I considered what life as a PhD student 
 would look like. I like learning but hmm. 
 - [A Mathematician's Lament](https://www.maa.org/external_archive/devlin/LockhartsLament.pdf): Talks about why math in the education
 system is flawed. I wish I took my math courses a bit more seriously.
