@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Mino Nakura | Bug Log</title>
+  <meta name="description" content="Fourth-Year BS/MS CSE Student at the University of Washington
+">
+
+  
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/blog/2021/bugs/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Mino</strong> Nakura
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/">about</a>
+
+        <!-- Blog -->
+        <a class="page-link" href="/blog/">blog</a>
+
+        <!-- Projects -->
+        <a class="page-link" href="/projects/">projects</a>
+
+        <!-- Misc -->
+        <a class="page-link" href="/misc/">misc</a>
+
+        <!-- Pages -->
+        <!-- 
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/misc/">Misc</a>
+          
+        
+          
+            <a class="page-link" href="/projects/">projects</a>
+          
+        
+          
+         -->
+
+        <!-- CV link -->
+        <!-- <a class="page-link" href="/assets/pdf/CV.pdf">vitae</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Bug Log</h1>
+    <p class="post-meta">January 3, 2021</p>
+  </header>
+
+  <article class="post-content">
+    <p>I hate making the same mistake twice because it means I didn’t learn from the first time
+I made the mistake. Of course, this doesn’t apply to everything. Nobody expects you 
+to be able to play the piano perfectly after making a mistake once - you have to 
+keep on making the same mistake until you eventually learn better. But making the 
+same programming mistake twice should be illegal. You’ll end up spend
+hours of your time trying to fix something that you’ve already fixed before. It’s 
+frustrating, painful, and, worst of all, you don’t learn anything.</p>
+
+<p>Most programmers would agree that they prefer not to encounter the same bug twice. 
+I think most programmers would also admit that they have unfortunately encountered 
+an identical bug more than once. However, the issue isn’t that they didn’t learn 
+from the first time they made the mistake. They learned, but they just forgot about 
+it after a while.</p>
+
+<p>Recently, I find myself in these sitautions a lot. I’ll be debugging an issue for a
+long time, and then realize that my bug is something I’ve encountered a long time ago.
+It feels like I’m relearning all the bugs I made. Most times, when I encounter a bug like
+this, I wish I had a book of bugs I’ve fixed in the past, so that I can reference 
+them when I’m debugging something new. I decided to keep track of all the stupid and 
+ridiculous mistakes I’ve made here, and I’ll reference them when I get stuck in the future.
+Obviously I won’t post every single mistake I make, but I’m writing down some I think 
+I’ll encounter again in the future.</p>
+
+<h4 id="table-of-contents">Table of Contents</h4>
+<ol>
+  <li><a href="#1/9/2021-Dont-forget-to-clip-your-images">1/9/2021 - Don’t forget to clip your images</a></li>
+  <li><a href="#12/8/2020-Transpose-is-Different-from-Reshaping">12/8/2020 - Transpose is Different from Reshaping</a></li>
+  <li><a href="#5/4/2020-Is-GPU-pronounced-Gpoo">5/4/2020 - Is GPU pronounced Gpoo?</a></li>
+</ol>
+
+<h4 id="192021-dont-forget-to-clip-your-images">1/9/2021 Don’t Forget to Clip Your Images</h4>
+
+<p>Today I spent an hour looking at the outputs of a neural network that produces images. 
+The image looks correct for the most part. It had the shapes in the correct place, but 
+the colors looked noisy and incorrect. I was scratching my head for a while since I 
+remembered to standardize my image too. I finally realized a while later that it was 
+because I didn’t clip the values of my image to be within (0, 255). Since it had values 
+greater than 255, the color wrapped around and produced weird outputs.</p>
+
+<h4 id="1282020-transpose-is-different-from-reshaping">12/8/2020 Transpose is Different from Reshaping</h4>
+
+<p>I’m kind of cheating because I’m adding this bug a whole month after I found it. I was 
+working on a Deep Learning project and saw that one of my losses wasn’t being calculated 
+correctly. Because of it, my network wasn’t learning and it wasn’t behaving correctly 
+either. Well, I realized I abused the <code class="language-plaintext highlighter-rouge">torch.reshape</code> function. I had a batch of images 
+of size <code class="language-plaintext highlighter-rouge">N x C x H x W</code> and I wanted to transpose it to have the shape <code class="language-plaintext highlighter-rouge">N x C x W x H</code>. 
+Instead of using <code class="language-plaintext highlighter-rouge">torch.transpose</code>, I ended up using <code class="language-plaintext highlighter-rouge">torch.reshape</code> to change my batch 
+size, which probably doesn’t do the same thing. I ultimately still had another bug (I think)
+but this was a big sigh moment for me.</p>
+
+<h4 id="542020-is-gpu-pronounced-gpoo">5/4/2020 Is GPU pronounced Gpoo?</h4>
+
+<p>I’m pretty friggen sure I won’t be making this mistake again, but this blog has to 
+start somewhere, so here’s my first bug/mistake. I was training a neural network on 
+Google Colab, and my TA pointed out to me that my model was slow at training. Now, 
+this was a very simple model so there was no reason why it would take a lot of time. 
+Then, he told me that I didn’t send my data and model to the GPU, which meant all
+my training was done on a CPU. CPUs are much slower at training than GPUs. So basically, 
+if I had used a GPU instead, all my training could have been done in a much shorter 
+time than I had used. Anyways, here’s my <a href="https://twitter.com/MinoruNakura/status/1257450063607083008">tweet</a>
+from when I made that mistake.</p>
+
+  </article>
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168938006-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168938006-1');
+</script>
+
+
+
+  </body>
+
+</html>

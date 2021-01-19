@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Mino Nakura</title>
+  <title>Mino Nakura | Spotibot</title>
   <meta name="description" content="Fourth-Year BS/MS CSE Student at the University of Washington
 ">
 
@@ -15,7 +15,7 @@
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
 
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/blog/">
+  <link rel="canonical" href="/projects/spotibot/">
 </head>
 
 
@@ -90,42 +90,37 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="header-bar">
-  <h1>My Blog</h1>
-  <h2>Oh no I'm embarrassed</h2>
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Spotibot</h1>
+    <h5 class="post-description">A Facebook chatbot to retrieve spotify links</h5>
+  </header>
+
+  <article class="post-content Spotibot clearfix">
+    <center>
+<img src="/assets/img/spotibot.jpg" width="60%" />
+</center>
+
+<h3 id="introduction">Introduction</h3>
+
+<p>Spotibot is a Facebook Messenger Bot. A user can send a message in the format "Artist:_ Song:_ “ and the chatbot will return a spotify link of the song. I like to listen to a lot of music and often want to share these songs with my friends. I found it extremely inconvenient to switch back and forth between the Spotify app and the Messenger app, so I decided to make a messenger app that would retrieve a shareable link for me.</p>
+
+<h3 id="how-i-coded-this-project">How I coded this project</h3>
+
+<p>The first resource I turned to was this <a href="https://www.youtube.com/watch?v=uU4pjtcbFeg&amp;list=PLyb_C2HpOQSC4M3lzzrql7DSppTeAxh-x">Facebook Messenger Bot Tutorial </a> by the Indian Pythonista. After I completed a simple echo chatbot, I created a Spotify Developer Account and started using the Spotify API to retreive songs. I parsed the JSON data to first find the artist, and then searched the artist’s albums until I found the track that matched the user’s request. The program is uploaded onto the Heroku Cloud Platform. The Heroku link was then connected to the Facebook page.</p>
+
+<h3 id="github-link">Github Link</h3>
+
+<p><a href="https://github.com/NakuraMino/Spotibot">Spotibot</a>: To use the code, be sure to edit the client_id and client_secret to match your Spotify Developer Credentials.</p>
+
+  </article>
+
+  
+
+  
+
 </div>
-
-
-<ul class="post-list">
-  
-    <li>
-      <h4><a class="post-title" href="/blog/2021/bugs/">Bug Log</a></h4>
-      <p class="post-meta">January 3, 2021 — 13:09</p>
-      <p>Bug Log. Also known as BLog hahahahaaaaaa</p>
-    </li>
-  
-    <li>
-      <h4><a class="post-title" href="/blog/2021/ramblings/">Ramblings of a University Student</a></h4>
-      <p class="post-meta">January 3, 2021 — 12:02</p>
-      <p>Most of my thoughts only deserve a paragraph at best.</p>
-    </li>
-  
-    <li>
-      <h4><a class="post-title" href="/blog/2020/internship-season/">A Survivor's Guide to Recruitment</a></h4>
-      <p class="post-meta">November 21, 2020 — 15:13</p>
-      <p>Recruitment is stressful. Here's how I got through it.</p>
-    </li>
-  
-    <li>
-      <h4><a class="post-title" href="/blog/2020/data-for-beginners/">A Beginner's Guide on How to Study Data</a></h4>
-      <p class="post-meta">June 17, 2020 — 11:22</p>
-      <p>Understanding how to analyze your data set before training your neural network</p>
-    </li>
-  
-</ul>
-
-
-
 
       </div>
     </div>
