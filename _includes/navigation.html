@@ -1,0 +1,31 @@
+</header>
+<nav id="navbar" class="navbar navbar-light bg-white navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
+<div class="container">
+    <!--On all pages except the About page we want to include name on the lefthand side of the Nav Bar-->
+    {% if page.title != "About" %}
+        {% assign name = site.full_name | split: ' ' %}
+        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl | prepend: site.url }}/"><span class="font-weight-bold">{{ name | first }}</span> {{ name | last }}</a>
+    {% endif %}
+    
+    <!-- Navbar Toogle -->
+    <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+    </button>
+
+    <!-- Include Links for all other stuff -->
+    <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+            {% for item in site.data.navigation %}
+            <li class="nav-item {% if page.title == item.name %}active{% endif %}">
+                <a class="nav-link" href="{{ item.link }}">
+                    {{ item.name }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+</nav>
+</header>

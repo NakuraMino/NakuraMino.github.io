@@ -1,0 +1,34 @@
+collections:
+  projects:
+    output: true
+
+# site variables 
+full_name: Mino Nakura  # title
+highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
+
+# control variables in css
+navbar_fixed: true
+
+# library versions
+academicons:
+  version: "1.8.6"
+  integrity: "sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw="
+bootstrap:
+  version: "4.4.1"
+  integrity:
+    css: "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    js: "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+fontawesome:
+  version: "5.13.0"
+  integrity: "sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+mdb:
+  version: "4.17.0"
+  integrity:
+    css: "sha256-/SwJ2GDcEt5382i8zqDwl36VJGECxEoIcBIuoLmLR4g="
+    js: "sha256-UGNYR+uy841zU5TiO2yXD96UktHt9TM4/WXvsDLr4l0="
+jquery:
+  version: "3.4.1"
+  integrity: "sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+popper:
+  version: "2.4.0"
+  integrity: "sha256-OH05DFHUWzr725HmuHo3pnuvUUn+TJuj8/Qz9xytFEw="

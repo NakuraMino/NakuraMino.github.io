@@ -1,0 +1,22 @@
+.current {
+    color: #67B7D1;
+}
+
+a:link { 
+    text-decoration: none;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 5px;
+    opacity: 0.9;
+    float: right;
+    width: 100%;
+}
+
+/* Page content */
+.content {
+    padding: 8px;
+}
