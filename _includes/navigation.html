@@ -4,7 +4,7 @@
     <!--On all pages except the About page we want to include name on the lefthand side of the Nav Bar-->
     {% if page.title != "About" %}
         {% assign name = site.full_name | split: ' ' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl | prepend: site.url }}/"><span class="font-weight-bold">{{ name | first }}</span> {{ name | last }}</a>
+        <a class="navbar-brand title fw-lighter" href="{{ site.baseurl | prepend: site.url }}/"><span class="font-weight-bold">{{ name | first }}</span> {{ name | last }}</a>
     {% endif %}
     
     <!-- Navbar Toogle -->

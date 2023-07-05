@@ -1,12 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        {% include head.html %}
-    </head>
-    <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
-        {% include navigation.html %}
-        {{ content }}
-    </body>
+---
+layout: default
+---
 
-    {% include hemline.html %}
-</html>
+<div class="post">
+    <header class="post-header">
+        {% assign name = site.full_name | split: ' ' %}
+        <h3 class="post-title"><span class="font-weight-bold">{{ name | first }}</span> {{ name | last }}</h3>
+        <p class="post-description">{{ page.description }}</p>
+    </header>
+
+    <article>
+        <div class="row">
+            <div class="col">
+                {{ content }}
+            </div>
+            <div class="profile col-4 {% if page.profile.align == 'left' %}order-first{% endif %}">
+                <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image | prepend: '/assets/images/' | relative_url }}">
+            </div>
+        </div>
+    </article>
+</div>

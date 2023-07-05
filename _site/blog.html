@@ -20,6 +20,7 @@
 <!-- Styles -->
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/styles.css">
+<link rel="stylesheet" href="/assets/css/github.css">
 
 <link rel="canonical" href="/blog.html">
     </head>
@@ -30,7 +31,7 @@
     <!--On all pages except the About page we want to include name on the lefthand side of the Nav Bar-->
     
         
-        <a class="navbar-brand title font-weight-lighter" href="http://localhost:4000/"><span class="font-weight-bold">Mino</span> Nakura</a>
+        <a class="navbar-brand title fw-lighter" href="http://localhost:4000/"><span class="font-weight-bold">Mino</span> Nakura</a>
     
     
     <!-- Navbar Toogle -->
@@ -73,7 +74,9 @@
 </div>
 </nav>
 </header>
-        <h1> Blog</h1>
+
+        <div class="container mt-5">
+            <h1> Blog</h1>
 
 <ul> 
     
@@ -85,6 +88,7 @@
     
 </ul>
 
+        </div>
     </body>
 
     <!-- Load Core and Bootstrap JS -->
@@ -95,7 +99,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/js/mdb.min.js"  integrity="sha256-UGNYR+uy841zU5TiO2yXD96UktHt9TM4/WXvsDLr4l0=" crossorigin="anonymous"></script>
 
 <!-- Code Syntax Highlighting -->
-<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 <script type="text/javascript">
     // Init Masonry

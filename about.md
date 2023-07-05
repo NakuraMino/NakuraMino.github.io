@@ -2,9 +2,13 @@
 layout: about
 title: About
 permalink: /
+description: Deputy Derp
+news: true
+profile:
+    image: profile.jpg
 ---
 
 
-Hi! I’m Mino, and I like working on cool things with cool people. I’m currently interning at X, the Moonshot Factory.
+Hi! I’m Mino, and I like working on cool things with cool people. I’m currently working as a Software Engineer at [Starfish Space](https://www.starfishspace.com/).
 
-I’m a B.S./M.S. student at the University of Washington and work as a research assistant at the Robotics and State Estimation Lab under Chris Xie. In the past, I have worked as a SWE intern at Microsoft and Carnegie Robotics and as a research assistant at the Human-Centered Robotics Lab under Mike Chung. Sometimes I also help teach computer science courses.
+I graduated from the University of Washington with a B.S./M.S degree in Computer Science. I had the pleasure of working as a Research Assistant under [Chris Xie](https://chrisdxie.github.io/) and [Michael Jae-Yoon Chung](https://mjyc.github.io/). In the past, I have interned at [Google X](https://x.company/) ([Everyday Robots](https://everydayrobots.com/)), [Carnegie Robotics](https://www.carnegierobotics.com/), and Microsoft.

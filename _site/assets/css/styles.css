@@ -19,7 +19,7 @@ body.sticky-bottom-footer {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 750px;
 }
 
 .profile img {
@@ -36,10 +36,10 @@ body.sticky-bottom-footer {
  * Styles for the base elements of the theme.
  ******************************************************************************/
 a, table.table a {
-  color: #91d2e7;
+  color: #6eb3ca;
 }
 a:hover, table.table a:hover {
-  color: #91d2e7;
+  color: #6eb3ca;
   text-decoration: underline;
 }
 a:hover:after, table.table a:hover:after {
@@ -76,15 +76,15 @@ a:hover:after, table.table a:hover:after {
   text-decoration: none;
 }
 .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
-  color: #91d2e7;
+  color: #6eb3ca;
 }
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
   background-color: inherit;
-  color: #91d2e7;
+  color: #6eb3ca;
   font-weight: bolder;
 }
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link:hover {
-  color: #91d2e7;
+  color: #6eb3ca;
 }
 .navbar.navbar-light .contact-icon {
   font-size: 2rem;
@@ -93,7 +93,7 @@ a:hover:after, table.table a:hover:after {
   color: #424242;
 }
 .navbar.navbar-light .contact-icon a:hover {
-  color: #91d2e7;
+  color: #6eb3ca;
 }
 
 .navbar-toggler .icon-bar {
@@ -141,7 +141,7 @@ a:hover:after, table.table a:hover:after {
   color: #424242;
 }
 .social .contact-icon a:hover {
-  color: #91d2e7;
+  color: #6eb3ca;
 }
 .social .contact-note {
   font-size: 0.8rem;
@@ -160,7 +160,7 @@ footer.fixed-bottom a {
   color: white;
 }
 footer.fixed-bottom a:hover {
-  color: #fafdfe;
+  color: #cbe4ec;
   text-decoration: none;
 }
 
@@ -178,7 +178,7 @@ footer.sticky-bottom {
   padding-bottom: 5rem;
 }
 .header-bar h1 {
-  color: #91d2e7;
+  color: #6eb3ca;
   font-size: 5rem;
 }
 
@@ -203,18 +203,18 @@ footer.sticky-bottom {
   text-decoration: none;
 }
 .post-list li a:hover {
-  color: #91d2e7;
+  color: #6eb3ca;
 }
 
 .pagination .page-item.active .page-link {
-  background-color: #91d2e7;
+  background-color: #6eb3ca;
 }
 .pagination .page-item.active .page-link:hover {
-  background-color: #91d2e7;
+  background-color: #6eb3ca;
 }
 
 .distill a:hover {
-  border-bottom-color: #91d2e7;
+  border-bottom-color: #6eb3ca;
   text-decoration: none;
 }
 
@@ -227,7 +227,7 @@ footer.sticky-bottom {
   text-decoration: none;
 }
 .projects .grid-item a:hover {
-  color: #91d2e7;
+  color: #6eb3ca;
 }
 .projects .card img {
   width: 100%;
@@ -258,7 +258,7 @@ footer.sticky-bottom {
 }
 .publications ol.bibliography li .abbr abbr {
   display: inline-block;
-  background-color: #91d2e7;
+  background-color: #6eb3ca;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -269,7 +269,7 @@ footer.sticky-bottom {
   font-weight: bolder;
 }
 .publications ol.bibliography li .author a {
-  border-bottom: 1px dashed #91d2e7;
+  border-bottom: 1px dashed #6eb3ca;
 }
 .publications ol.bibliography li .author a:hover {
   border-bottom-style: solid;
@@ -281,7 +281,7 @@ footer.sticky-bottom {
 }
 .publications ol.bibliography li em.star {
   border-bottom: none;
-  color: #91d2e7;
+  color: #6eb3ca;
   font-style: normal;
 }
 .publications ol.bibliography li a.abstract, .publications ol.bibliography li a.bibtex {

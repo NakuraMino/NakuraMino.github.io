@@ -5,7 +5,6 @@ collections:
 # site variables 
 full_name: Mino Nakura  # title
 highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
-
 # control variables in css
 navbar_fixed: true
 
@@ -32,3 +31,6 @@ jquery:
 popper:
   version: "2.4.0"
   integrity: "sha256-OH05DFHUWzr725HmuHo3pnuvUUn+TJuj8/Qz9xytFEw="
+mansory:
+  version: "4.2.2"
+  integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
