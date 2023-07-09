@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<!-- page.html -->
+<div class="post">
+
+    <header class="header-bar">
+        <h1 class="post-title">{{ page.header }}</h1>
+        {% if page.description %}
+            <p class="post-description">{{ page.description }}</p>
+        {% endif %}
+    </header>
+
+    <article>
+    <div class="projects">
+        <article>
+          <!-- <div class="container"> -->
+            <div class="container">
+                <div class="row row-cols-3 ">
+                {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+                {% for project in sorted_projects %}
+                {% if project.ready %}
+                <div class="card hoverable mb-1 mr-2 rounded data-zoomable">
+                        <img class="card-img-top img-wrap" src="{{ project.icon | prepend: '/assets/images/' | relative_url }}">
+                    <div class="card-body">
+                        <h5 class="card=title">
+                            {{ project.short_title }}
+                        </h5>
+                        <p class="card-text">{{ project.description }}</p>
+                        <div class="row">
+                            <a href="{{ project.url }}" class="button col text-center">Post</a>
+                            <a href="{{ project.github }}" class="button col text-center">Github</a>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+                </div>
+            </div>
+
+        </article>
+      </div>
+    </article>
+
+
+
+</div>

@@ -1,0 +1,16 @@
+<div class="grid-sizer"></div>
+<div class="grid-item">
+    <a href="{{ project.url | relative_url }}">
+        <div class="card hoverable">
+            {%- if project.img %}
+            {%- include figure.html
+            path=project.img
+            alt="project thumbnail" -%}
+            {%- endif %}
+        <div class="card-body">
+            <h2 class="card-title text-lowercase">{{ project.title }}</h2>
+            <p class="card-text">{{ project.description }}</p>
+            <div class="row ml-1 mr-1 p-0"></div>
+        </div>
+    </a>
+</div>

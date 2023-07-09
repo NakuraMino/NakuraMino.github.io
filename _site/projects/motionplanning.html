@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-<title> Neural Network-based Algorithms for Motion Planning </title>
+<title> Mino Nakura | Neural Network-based Algorithms for Motion Planning </title>
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="/assets/css/styles.css">
@@ -25,13 +25,13 @@
 <link rel="canonical" href="/projects/motionplanning.html">
     </head>
     <body class="fixed-top-nav sticky-bottom-footer">
-        </header>
+        <header>
 <nav id="navbar" class="navbar navbar-light bg-white navbar-expand-sm fixed-top">
 <div class="container">
     <!--On all pages except the About page we want to include name on the lefthand side of the Nav Bar-->
     
         
-        <a class="navbar-brand title fw-lighter" href="http://localhost:4000/"><span class="font-weight-bold">Mino</span> Nakura</a>
+        <a class="navbar-brand title font-weight-lighter" href="http://localhost:4000/"><span class="font-weight-bold">Mino</span> Nakura</a>
     
     
     <!-- Navbar Toogle -->
@@ -52,20 +52,20 @@
             </li>
             
             <li class="nav-item ">
-                <a class="nav-link" href="/projects.html">
+                <a class="nav-link" href="/projects">
                     projects
                 </a>
             </li>
             
             <li class="nav-item ">
-                <a class="nav-link" href="/blog.html">
+                <a class="nav-link" href="/blog">
                     blog
                 </a>
             </li>
             
             <li class="nav-item ">
-                <a class="nav-link" href="/misc.html">
-                    misc
+                <a class="nav-link" href="/chess">
+                    chess
                 </a>
             </li>
             
@@ -76,8 +76,30 @@
 </header>
 
         <div class="container mt-5">
-            
+            <!-- page.html -->
+<div class="post">
+    <header class="post-header">
+    <h3 class="post-title">Neural Network-based Algorithms for Motion Planning</h3>
+    
+    <p class="post-description">A CSE 571 Class Project to replicate the Motion Planning Networks paper.</p>
+    
+    </header>
 
+    <article>
+        <div class="post post-footer">
+            <p><img src="/assets/images/motionplanning.png" alt="motion planning non-holonomic" class="blog-img" /></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Existing path planning methods, such as A* and Rapidly-exploring Random Trees (RRT), are known to provide collision-free paths from a start state to a goal state. However such methods become computationally expensive in high dimensional planning spaces. Recent work in this area has shown neural networks to be a viable and computationally inexpensive alternative to such traditional motion planning methods. In this report, we explore neural network-based algorithms that imitate these path planning algorithms. Specifically, we present two neural network architectures and consider three neural network-based planning algorithms. We demonstrate the applications of these planning algorithms on a holonomic point robot in a grid world and on a car-like robot with non-holonomic constraints in a continuous 2D plane. We then evaluate these algorithms on a variety of maps and present the results.</p>
+
+<h2 id="read-the-final-report-here">Read the Final Report Here:</h2>
+<p><a href="https://nakuramino.github.io/assets/pdf/CSE_571_Project_2_Final_Report.pdf">Final Report</a></p>
+
+        </div>
+    </article>
+
+</div>
         </div>
     </body>
 

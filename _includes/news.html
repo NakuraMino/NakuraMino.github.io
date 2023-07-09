@@ -1,0 +1,13 @@
+<div class="news">
+    <h3>news</h3>
+    <div class="table-responsive">
+        <table class="table table-sm table-borderless">
+            {% for post in site.news reversed limit:5 %}
+            <tr>
+                <th scope="row">{{ post.date | date: "%b %-d, %Y" }}</th>
+                <td>{{ post.content | remove: '<p>' | remove: '</p>' | emojify }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>

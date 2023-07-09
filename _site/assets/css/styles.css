@@ -36,10 +36,10 @@ body.sticky-bottom-footer {
  * Styles for the base elements of the theme.
  ******************************************************************************/
 a, table.table a {
-  color: #6eb3ca;
+  color: #53bee2;
 }
 a:hover, table.table a:hover {
-  color: #6eb3ca;
+  color: #53bee2;
   text-decoration: underline;
 }
 a:hover:after, table.table a:hover:after {
@@ -76,15 +76,15 @@ a:hover:after, table.table a:hover:after {
   text-decoration: none;
 }
 .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
-  color: #6eb3ca;
+  color: #53bee2;
 }
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
   background-color: inherit;
-  color: #6eb3ca;
+  color: #53bee2;
   font-weight: bolder;
 }
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link:hover {
-  color: #6eb3ca;
+  color: #53bee2;
 }
 .navbar.navbar-light .contact-icon {
   font-size: 2rem;
@@ -93,7 +93,7 @@ a:hover:after, table.table a:hover:after {
   color: #424242;
 }
 .navbar.navbar-light .contact-icon a:hover {
-  color: #6eb3ca;
+  color: #53bee2;
 }
 
 .navbar-toggler .icon-bar {
@@ -141,7 +141,7 @@ a:hover:after, table.table a:hover:after {
   color: #424242;
 }
 .social .contact-icon a:hover {
-  color: #6eb3ca;
+  color: #53bee2;
 }
 .social .contact-note {
   font-size: 0.8rem;
@@ -160,7 +160,7 @@ footer.fixed-bottom a {
   color: white;
 }
 footer.fixed-bottom a:hover {
-  color: #cbe4ec;
+  color: #c0e7f4;
   text-decoration: none;
 }
 
@@ -173,13 +173,17 @@ footer.sticky-bottom {
 
 .header-bar {
   border-bottom: 1px solid #e8e8e8;
-  text-align: center;
+  text-align: left;
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
-.header-bar h1 {
-  color: #6eb3ca;
-  font-size: 5rem;
+.header-bar h3 {
+  color: #424242;
+  font-size: 3rem;
+}
+
+.page-description {
+  max-width: 75%;
 }
 
 .post-list {
@@ -198,23 +202,36 @@ footer.sticky-bottom {
   font-size: 0.875rem;
   margin-bottom: 0;
 }
+.post-list li p {
+  margin-bottom: 0px;
+}
 .post-list li a {
-  color: black;
+  color: #424242;
   text-decoration: none;
 }
 .post-list li a:hover {
-  color: #6eb3ca;
+  color: #53bee2;
+}
+.post-list li ul {
+  margin-bottom: 0px;
+}
+.post-list li img {
+  max-width: 50%;
+  max-height: 100%;
+}
+.post-list li h5 {
+  color: #828282;
 }
 
 .pagination .page-item.active .page-link {
-  background-color: #6eb3ca;
+  background-color: #53bee2;
 }
 .pagination .page-item.active .page-link:hover {
-  background-color: #6eb3ca;
+  background-color: #53bee2;
 }
 
 .distill a:hover {
-  border-bottom-color: #6eb3ca;
+  border-bottom-color: #53bee2;
   text-decoration: none;
 }
 
@@ -227,10 +244,15 @@ footer.sticky-bottom {
   text-decoration: none;
 }
 .projects .grid-item a:hover {
-  color: #6eb3ca;
+  color: #53bee2;
 }
-.projects .card img {
-  width: 100%;
+
+.blog-img {
+  max-width: 100%;
+}
+
+.post-footer {
+  margin-bottom: 100px;
 }
 
 .publications {
@@ -258,7 +280,7 @@ footer.sticky-bottom {
 }
 .publications ol.bibliography li .abbr abbr {
   display: inline-block;
-  background-color: #6eb3ca;
+  background-color: #53bee2;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -269,7 +291,7 @@ footer.sticky-bottom {
   font-weight: bolder;
 }
 .publications ol.bibliography li .author a {
-  border-bottom: 1px dashed #6eb3ca;
+  border-bottom: 1px dashed #53bee2;
 }
 .publications ol.bibliography li .author a:hover {
   border-bottom-style: solid;
@@ -281,7 +303,7 @@ footer.sticky-bottom {
 }
 .publications ol.bibliography li em.star {
   border-bottom: none;
-  color: #6eb3ca;
+  color: #53bee2;
   font-style: normal;
 }
 .publications ol.bibliography li a.abstract, .publications ol.bibliography li a.bibtex {

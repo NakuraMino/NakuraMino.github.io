@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-<title> Mino Nakura | Blog </title>
+<title> Mino Nakura | Recruitment Sankey Diagrams </title>
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="/assets/css/styles.css">
@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="/assets/css/styles.css">
 <link rel="stylesheet" href="/assets/css/github.css">
 
-<link rel="canonical" href="/blog.html">
+<link rel="canonical" href="/projects/recruitment.html">
     </head>
     <body class="fixed-top-nav sticky-bottom-footer">
         <header>
@@ -76,39 +76,34 @@
 </header>
 
         <div class="container mt-5">
-            <div class="post">
-    <header class="header-bar">
-        <h1 class="post-title">Writings</h1>
-        
-            <p class="page-description">Blogging my learnings and ramblings</p>
-        
+            <!-- page.html -->
+<div class="post">
+    <header class="post-header">
+    <h3 class="post-title">Recruitment Sankey Diagrams</h3>
+    
+    <p class="post-description">A visualization of how my recruitment process went.</p>
+    
     </header>
-    <article>
-        <div class="post-list"> 
-    <li class="post-meta">
-        
-        
-            
-            <ul>
-                <div class="container">
-                    <div class="row"> 
-                        <div class="col-8">
-                            <h5 class="font-weight-bold"><a href="/2023/07/08/uni-fn-approx-thm.html"> The Universal Function Approximation Theorem</a></h5>
-                            <p> Jul 8, 2023 </p>
-                            
-                        </div>
-                        <div class="col">
-                            <img class="img-fluid z-depth-1 rounded" src="/assets/images/neural_network.png" />
-                        </div>
-                    </div>
-                </div>
-            </ul>
-            
-        
-    </li>
-</div>
 
+    <article>
+        <div class="post post-footer">
+            <p><img src="/assets/images/sankey.png" alt="motion planning non-holonomic" class="blog-img" /></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>As the amount of rejection letters piled up, I started to wonder what my ratios were looking like. I also wanted a quick and dirty summary of my statistics, and I saw a lot of people make sankey diagrams of their recruitment processes, so I thought I would do the same. This diagram show how my internship search for summer 2020 went.</p>
+
+<h2 id="demo">Demo</h2>
+
+<p>Check out here for an interactive version of the diagrams!</p>
+
+<h2 id="how-i-coded-this-project">How I coded this project</h2>
+
+<p>I made the Sankey Diagram using Google’s visualization tool. I kept track of all my applications in a csv file, and I parsed them using python. The results were compiled into a .txt file, and I used that to make my Sankey Diagram in javascript.</p>
+
+        </div>
     </article>
+
 </div>
         </div>
     </body>

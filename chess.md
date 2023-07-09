@@ -1,12 +1,13 @@
 ---
 layout: blog
-title: Blog
-description: Blogging my learnings and ramblings
-header: Writings
+title: chess
+description: A blog for those that are interested in my competitive chess journey. Will happily admit that most of my analysis will be subpar at best.
+header: Chess
 ---
+
 <div class="post-list"> 
     <li class="post-meta">
-        {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+        {% assign sorted_posts = site.chess | sort: 'date' | reverse %}
         {% for post in sorted_posts %}
             {% if post.ready %}
             <ul>

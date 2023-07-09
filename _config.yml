@@ -1,9 +1,14 @@
 collections:
   projects:
     output: true
+  news:
+    output: true
+  chess: 
+    output: true
 
 # site variables 
 full_name: Mino Nakura  # title
+contact_note: contact me at minorunakura(at)gmail(dot)com
 highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
 # control variables in css
 navbar_fixed: true
