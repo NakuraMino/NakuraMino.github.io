@@ -15,6 +15,9 @@ highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
 # control variables in css
 navbar_fixed: true
 
+url: nakuramino.github.io
+baseurl: /root
+
 # library versions
 academicons:
   version: "1.8.6"
