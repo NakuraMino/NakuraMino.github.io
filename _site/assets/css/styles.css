@@ -147,6 +147,15 @@ a:hover:after, table.table a:hover:after {
   font-size: 0.8rem;
 }
 
+.footer {
+  text-align: center;
+}
+.footer a {
+  font-size: 0.8rem;
+  color: #424242;
+  text-decoration: none;
+}
+
 footer.fixed-bottom {
   color: #c2c2c2;
   background-color: #424242;
@@ -176,6 +185,7 @@ footer.sticky-bottom {
   text-align: left;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  padding-top: 10px;
 }
 .header-bar h3 {
   color: #424242;
@@ -245,6 +255,14 @@ footer.sticky-bottom {
 }
 .projects .grid-item a:hover {
   color: #53bee2;
+}
+.projects .card-img-top {
+  height: 7vw;
+  object-fit: cover;
+}
+
+.card {
+  max-width: 32%;
 }
 
 .blog-img {

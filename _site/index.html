@@ -23,6 +23,29 @@
 <link rel="stylesheet" href="/assets/css/github.css">
 
 <link rel="canonical" href="/">
+        <!-- Load Core and Bootstrap JS -->
+<!-- TODO: figure out SHA for popper and jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/js/mdb.min.js"  integrity="sha256-UGNYR+uy841zU5TiO2yXD96UktHt9TM4/WXvsDLr4l0=" crossorigin="anonymous"></script>
+
+<!-- Code Syntax Highlighting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<script type="text/javascript">
+    // Init Masonry
+    var $grid = $('.grid').masonry({
+      gutter: 10,
+      horizontalOrder: true,
+      itemSelector: '.grid-item',
+    });
+    // layout Masonry after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry('layout');
+    });
+  </script>
     </head>
     <body class="fixed-top-nav sticky-bottom-footer">
         <header>
@@ -77,13 +100,13 @@
     <header class="post-header">
         
         <h3 class="post-title"><span class="font-weight-bold">Mino</span> Nakura</h3>
-        <p class="post-description">Deputy Derp</p>
+        <p class="post-description"></p>
     </header>
 
     <article>
         <div class="row">
             <div class="col">
-                <p>Hi! I’m Mino, and I like working on cool things with cool people. I’m currently working as a Software Engineer at <a href="https://www.starfishspace.com/">Starfish Space</a>.</p>
+                <p>Hi, I’m Mino. I like working on cool things with cool people. I’m currently working as a Software Engineer at <a href="https://www.starfishspace.com/">Starfish Space</a>.</p>
 
 <p>I graduated from the University of Washington with a B.S./M.S degree in Computer Science. I have had the pleasure of working as a Research Assistant under <a href="https://chrisdxie.github.io/">Chris Xie</a> and <a href="https://mjyc.github.io/">Michael Jae-Yoon Chung</a>. In the past, I also interned at <a href="https://x.company/">Google X</a> (<a href="https://everydayrobots.com/">Everyday Robots</a>), <a href="https://www.carnegierobotics.com/">Carnegie Robotics</a>, and Microsoft.</p>
 
@@ -112,7 +135,7 @@
             
             <tr>
                 <th scope="row">Jun 14, 2021</th>
-                <td>Interning at Google X / Everyday Robots
+                <td>Interned at Google X / Everyday Robots
 </td>
             </tr>
             
@@ -130,33 +153,14 @@
   
             <div class="contact-note">contact me at minorunakura(at)gmail(dot)com</div>
         </div>
+        <div class="footer text-center">
+            <a href="/about_site"> About this site </a>
+        </div>
     </article>
 </div>
 
         </div>
     </body>
 
-    <!-- Load Core and Bootstrap JS -->
-<!-- TODO: figure out SHA for popper and jquery -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/js/mdb.min.js"  integrity="sha256-UGNYR+uy841zU5TiO2yXD96UktHt9TM4/WXvsDLr4l0=" crossorigin="anonymous"></script>
-
-<!-- Code Syntax Highlighting -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-
-<script type="text/javascript">
-    // Init Masonry
-    var $grid = $('.grid').masonry({
-      gutter: 10,
-      horizontalOrder: true,
-      itemSelector: '.grid-item',
-    });
-    // layout Masonry after each image loads
-    $grid.imagesLoaded().progress( function() {
-      $grid.masonry('layout');
-    });
-  </script>
+    
 </html>

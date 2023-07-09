@@ -5,6 +5,8 @@ collections:
     output: true
   chess: 
     output: true
+  pages:
+    output: true
 
 # site variables 
 full_name: Mino Nakura  # title

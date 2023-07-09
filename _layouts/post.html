@@ -8,6 +8,9 @@ layout: default
     {% if page.description %}
     <p class="post-description">{{ page.description }}</p>
     {% endif %}
+    {% if page.show_date %}
+    <p class="post-description"> {{ page.date | date: "%b %-d, %Y" }} </p>
+    {% endif %}
     </header>
 
     <article>

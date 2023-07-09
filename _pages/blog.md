@@ -1,13 +1,13 @@
 ---
 layout: blog
-title: chess
-description: A blog for those that are interested in my competitive chess journey. Will happily admit that most of my analysis will be subpar at best.
-header: Chess
+title: Blog
+description: English majors look away
+permalink: /blog
+header: Writings
 ---
-
 <div class="post-list"> 
     <li class="post-meta">
-        {% assign sorted_posts = site.chess | sort: 'date' | reverse %}
+        {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
         {% for post in sorted_posts %}
             {% if post.ready %}
             <ul>
@@ -21,7 +21,7 @@ header: Chess
                             {% endif %}
                         </div>
                         <div class="col">
-                            <img class="img-fluid z-depth-1 rounded" src="{{ post.icon | prepend: '/assets/images/' | relative_url }}">
+                            <img class="img-fluid z-depth-1 rounded" src="{{ post.icon | prepend: '/assets/images/blog/' | relative_url }}">
                         </div>
                     </div>
                 </div>

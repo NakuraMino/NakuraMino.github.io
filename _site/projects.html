@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-<title> Mino Nakura | My Projects </title>
+<title> Mino Nakura | Projects </title>
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="/assets/css/styles.css">
@@ -23,6 +23,29 @@
 <link rel="stylesheet" href="/assets/css/github.css">
 
 <link rel="canonical" href="/projects">
+        <!-- Load Core and Bootstrap JS -->
+<!-- TODO: figure out SHA for popper and jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/js/mdb.min.js"  integrity="sha256-UGNYR+uy841zU5TiO2yXD96UktHt9TM4/WXvsDLr4l0=" crossorigin="anonymous"></script>
+
+<!-- Code Syntax Highlighting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<script type="text/javascript">
+    // Init Masonry
+    var $grid = $('.grid').masonry({
+      gutter: 10,
+      horizontalOrder: true,
+      itemSelector: '.grid-item',
+    });
+    // layout Masonry after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry('layout');
+    });
+  </script>
     </head>
     <body class="fixed-top-nav sticky-bottom-footer">
         <header>
@@ -91,12 +114,12 @@
         <article>
           <!-- <div class="container"> -->
             <div class="container">
-                <div class="row row-cols-3 ">
+                <div class="row row-cols-3">
                 
                 
                 
-                <div class="card hoverable mb-1 mr-2 rounded data-zoomable">
-                        <img class="card-img-top img-wrap" src="/assets/images/motionplanning_icon.png">
+                <div class="card hoverable mb-2 mr-2 rounded data-zoomable">
+                        <img class="card-img-top img-wrap" src="/assets/images/projects/motionplanning_icon.png">
                     <div class="card-body">
                         <h5 class="card=title">
                             Deep Motion Planners
@@ -111,8 +134,24 @@
                 
                 
                 
-                <div class="card hoverable mb-1 mr-2 rounded data-zoomable">
-                        <img class="card-img-top img-wrap" src="/assets/images/sankey.png">
+                <div class="card hoverable mb-2 mr-2 rounded data-zoomable">
+                        <img class="card-img-top img-wrap" src="/assets/images/projects/cartpole_icon.png">
+                    <div class="card-body">
+                        <h5 class="card=title">
+                            CartpoleNet
+                        </h5>
+                        <p class="card-text">A CSE 571 Project, and my first experience with Deep Learning.</p>
+                        <div class="row">
+                            <a href="/projects/cartpole.html" class="button col text-center">Post</a>
+                            <a href="https://github.com/NakuraMino/Cartpole-Dynamics-Prediction" class="button col text-center">Github</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="card hoverable mb-2 mr-2 rounded data-zoomable">
+                        <img class="card-img-top img-wrap" src="/assets/images/projects/sankey.png">
                     <div class="card-body">
                         <h5 class="card=title">
                             Recruitment Sankey Diagrams
@@ -126,9 +165,10 @@
                 </div>
                 
                 
+                
+                
                 </div>
             </div>
-
         </article>
       </div>
     </article>
@@ -139,27 +179,5 @@
         </div>
     </body>
 
-    <!-- Load Core and Bootstrap JS -->
-<!-- TODO: figure out SHA for popper and jquery -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/js/mdb.min.js"  integrity="sha256-UGNYR+uy841zU5TiO2yXD96UktHt9TM4/WXvsDLr4l0=" crossorigin="anonymous"></script>
-
-<!-- Code Syntax Highlighting -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-
-<script type="text/javascript">
-    // Init Masonry
-    var $grid = $('.grid').masonry({
-      gutter: 10,
-      horizontalOrder: true,
-      itemSelector: '.grid-item',
-    });
-    // layout Masonry after each image loads
-    $grid.imagesLoaded().progress( function() {
-      $grid.masonry('layout');
-    });
-  </script>
+    
 </html>

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-<title> Mino Nakura | chess </title>
+<title> Mino Nakura | Chess </title>
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="/assets/css/styles.css">
@@ -22,7 +22,30 @@
 <link rel="stylesheet" href="/assets/css/styles.css">
 <link rel="stylesheet" href="/assets/css/github.css">
 
-<link rel="canonical" href="/chess.html">
+<link rel="canonical" href="/chess">
+        <!-- Load Core and Bootstrap JS -->
+<!-- TODO: figure out SHA for popper and jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/js/mdb.min.js"  integrity="sha256-UGNYR+uy841zU5TiO2yXD96UktHt9TM4/WXvsDLr4l0=" crossorigin="anonymous"></script>
+
+<!-- Code Syntax Highlighting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<script type="text/javascript">
+    // Init Masonry
+    var $grid = $('.grid').masonry({
+      gutter: 10,
+      horizontalOrder: true,
+      itemSelector: '.grid-item',
+    });
+    // layout Masonry after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry('layout');
+    });
+  </script>
     </head>
     <body class="fixed-top-nav sticky-bottom-footer">
         <header>
@@ -63,7 +86,7 @@
                 </a>
             </li>
             
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="/chess">
                     chess
                 </a>
@@ -80,7 +103,7 @@
     <header class="header-bar">
         <h1 class="post-title">Chess</h1>
         
-            <p class="page-description">A blog for those that are interested in my competitive chess journey. Will happily admit that most of my analysis will be subpar at best.</p>
+            <p class="page-description">Logging my chess journey and posting subpar chess analysis</p>
         
     </header>
     <article>
@@ -93,12 +116,12 @@
                 <div class="container">
                     <div class="row"> 
                         <div class="col-8">
-                            <h5 class="font-weight-bold"><a href="/chess/first.html"> The 2023 Washington Open</a></h5>
+                            <h5 class="font-weight-bold"><a href="/chess/2023-05-30-washington-open.html"> The 2023 Washington Open</a></h5>
                             <p> Jul 8, 2023 </p>
                             
                         </div>
                         <div class="col">
-                            <img class="img-fluid z-depth-1 rounded" src="/assets/images/wa_open.jpg" />
+                            <img class="img-fluid z-depth-1 rounded" src="/assets/images/chess/wa_open.jpg" />
                         </div>
                     </div>
                 </div>
@@ -113,27 +136,5 @@
         </div>
     </body>
 
-    <!-- Load Core and Bootstrap JS -->
-<!-- TODO: figure out SHA for popper and jquery -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/js/mdb.min.js"  integrity="sha256-UGNYR+uy841zU5TiO2yXD96UktHt9TM4/WXvsDLr4l0=" crossorigin="anonymous"></script>
-
-<!-- Code Syntax Highlighting -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-
-<script type="text/javascript">
-    // Init Masonry
-    var $grid = $('.grid').masonry({
-      gutter: 10,
-      horizontalOrder: true,
-      itemSelector: '.grid-item',
-    });
-    // layout Masonry after each image loads
-    $grid.imagesLoaded().progress( function() {
-      $grid.masonry('layout');
-    });
-  </script>
+    
 </html>

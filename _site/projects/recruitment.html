@@ -23,6 +23,29 @@
 <link rel="stylesheet" href="/assets/css/github.css">
 
 <link rel="canonical" href="/projects/recruitment.html">
+        <!-- Load Core and Bootstrap JS -->
+<!-- TODO: figure out SHA for popper and jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/js/mdb.min.js"  integrity="sha256-UGNYR+uy841zU5TiO2yXD96UktHt9TM4/WXvsDLr4l0=" crossorigin="anonymous"></script>
+
+<!-- Code Syntax Highlighting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<script type="text/javascript">
+    // Init Masonry
+    var $grid = $('.grid').masonry({
+      gutter: 10,
+      horizontalOrder: true,
+      itemSelector: '.grid-item',
+    });
+    // layout Masonry after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry('layout');
+    });
+  </script>
     </head>
     <body class="fixed-top-nav sticky-bottom-footer">
         <header>
@@ -83,23 +106,24 @@
     
     <p class="post-description">A visualization of how my recruitment process went.</p>
     
+    
     </header>
 
     <article>
         <div class="post post-footer">
-            <p><img src="/assets/images/sankey.png" alt="motion planning non-holonomic" class="blog-img" /></p>
+            <p><img src="/assets/images/projects/sankey.png" alt="sankey-diagram" class="blog-img" /></p>
 
 <h2 id="introduction">Introduction</h2>
 
-<p>As the amount of rejection letters piled up, I started to wonder what my ratios were looking like. I also wanted a quick and dirty summary of my statistics, and I saw a lot of people make sankey diagrams of their recruitment processes, so I thought I would do the same. This diagram show how my internship search for summer 2020 went.</p>
+<p>This diagram show how my internship search for summer 2020 went. As the amount of rejection letters piled up, I started to wonder what my ratios were looking like. I also wanted a quick and dirty summary of my statistics, and I saw a lot of people make sankey diagrams of their recruitment processes, so I thought I would do the same.</p>
 
 <h2 id="demo">Demo</h2>
 
-<p>Check out here for an interactive version of the diagrams!</p>
+<p>Check out <a href="https://nakuramino.github.io/Recruitment_Sankey_Diagram/">here</a> for an interactive version of the diagrams!</p>
 
 <h2 id="how-i-coded-this-project">How I coded this project</h2>
 
-<p>I made the Sankey Diagram using Google’s visualization tool. I kept track of all my applications in a csv file, and I parsed them using python. The results were compiled into a .txt file, and I used that to make my Sankey Diagram in javascript.</p>
+<p>I made the Sankey Diagram using Google’s <a href="https://developers.google.com/chart/interactive/docs/gallery/sankey">visualization tool</a>. I kept track of all my applications in a csv file, and I parsed them using python. The results were compiled into a .txt file, and I used that to make my Sankey Diagram in javascript.</p>
 
         </div>
     </article>
@@ -108,27 +132,5 @@
         </div>
     </body>
 
-    <!-- Load Core and Bootstrap JS -->
-<!-- TODO: figure out SHA for popper and jquery -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/js/mdb.min.js"  integrity="sha256-UGNYR+uy841zU5TiO2yXD96UktHt9TM4/WXvsDLr4l0=" crossorigin="anonymous"></script>
-
-<!-- Code Syntax Highlighting -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-
-<script type="text/javascript">
-    // Init Masonry
-    var $grid = $('.grid').masonry({
-      gutter: 10,
-      horizontalOrder: true,
-      itemSelector: '.grid-item',
-    });
-    // layout Masonry after each image loads
-    $grid.imagesLoaded().progress( function() {
-      $grid.masonry('layout');
-    });
-  </script>
+    
 </html>

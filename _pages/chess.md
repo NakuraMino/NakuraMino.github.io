@@ -1,12 +1,14 @@
 ---
 layout: blog
-title: Blog
-description: Blogging my learnings and ramblings
-header: Writings
+title: Chess
+description: Logging my chess journey and posting subpar chess analysis
+header: Chess
+permalink: /chess
 ---
+
 <div class="post-list"> 
     <li class="post-meta">
-        {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+        {% assign sorted_posts = site.chess | sort: 'date' | reverse %}
         {% for post in sorted_posts %}
             {% if post.ready %}
             <ul>
@@ -20,7 +22,7 @@ header: Writings
                             {% endif %}
                         </div>
                         <div class="col">
-                            <img class="img-fluid z-depth-1 rounded" src="{{ post.icon | prepend: '/assets/images/' | relative_url }}">
+                            <img class="img-fluid z-depth-1 rounded" src="{{ post.icon | prepend: '/assets/images/chess/' | relative_url }}">
                         </div>
                     </div>
                 </div>

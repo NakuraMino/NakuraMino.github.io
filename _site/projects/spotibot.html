@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-<title> Mino Nakura | Neural Network-based Algorithms for Motion Planning </title>
+<title> Mino Nakura | Spotibot </title>
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="/assets/css/styles.css">
@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="/assets/css/styles.css">
 <link rel="stylesheet" href="/assets/css/github.css">
 
-<link rel="canonical" href="/projects/motionplanning.html">
+<link rel="canonical" href="/projects/spotibot.html">
         <!-- Load Core and Bootstrap JS -->
 <!-- TODO: figure out SHA for popper and jquery -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -102,23 +102,22 @@
             <!-- page.html -->
 <div class="post">
     <header class="post-header">
-    <h3 class="post-title">Neural Network-based Algorithms for Motion Planning</h3>
+    <h3 class="post-title">Spotibot</h3>
     
-    <p class="post-description">A CSE 571 Class Project to replicate the Motion Planning Networks paper.</p>
+    <p class="post-description">Spotibot: A Facebook Messenger Chat Bot to retrieve Spotify links</p>
     
     
     </header>
 
     <article>
         <div class="post post-footer">
-            <p><img src="/assets/images/projects/motionplanning.png" alt="motion planning non-holonomic" class="blog-img" /></p>
+            <p><img src="/assets/images/projects/spotibot.jpg" alt="Spotibot Demo" class="blog-img" /></p>
 
 <h2 id="introduction">Introduction</h2>
+<p>Spotibot is a Facebook Messenger Bot. A user can send a message in the format “Artist:_ Song:_ “ and the chatbot will return a spotify link of the song. I like to listen to a lot of music and often want to share these songs with my friends. I found it extremely inconvenient to switch back and forth between the Spotify app and the Messenger app, so I decided to make a messenger app that would retrieve a shareable link for me.</p>
 
-<p>Existing path planning methods, such as A* and Rapidly-exploring Random Trees (RRT), are known to provide collision-free paths from a start state to a goal state. However such methods become computationally expensive in high dimensional planning spaces. Recent work in this area has shown neural networks to be a viable and computationally inexpensive alternative to such traditional motion planning methods. In this report, we explore neural network-based algorithms that imitate these path planning algorithms. Specifically, we present two neural network architectures and consider three neural network-based planning algorithms. We demonstrate the applications of these planning algorithms on a holonomic point robot in a grid world and on a car-like robot with non-holonomic constraints in a continuous 2D plane. We then evaluate these algorithms on a variety of maps and present the results.</p>
-
-<h2 id="final-report">Final Report:</h2>
-<p><a href="https://nakuramino.github.io/assets/pdf/CSE_571_Project_2_Final_Report.pdf">Link</a></p>
+<h2 id="how-i-coded-this-project">How I coded this project</h2>
+<p>The first resource I turned to was this <a href="https://www.youtube.com/watch?v=uU4pjtcbFeg&amp;list=PLyb_C2HpOQSC4M3lzzrql7DSppTeAxh-x">Facebook Messenger Bot Tutorial</a> by the Indian Pythonista. After I completed a simple echo chatbot, I created a Spotify Developer Account and started using the Spotify API to retreive songs. I parsed the JSON data to first find the artist, and then searched the artist’s albums until I found the track that matched the user’s request. The program is uploaded onto the Heroku Cloud Platform. The Heroku link was then connected to the Facebook page.</p>
 
         </div>
     </article>

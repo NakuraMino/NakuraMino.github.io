@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-<title> Mino Nakura | Neural Network-based Algorithms for Motion Planning </title>
+<title> Mino Nakura | CartpoleNet </title>
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="/assets/css/styles.css">
@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="/assets/css/styles.css">
 <link rel="stylesheet" href="/assets/css/github.css">
 
-<link rel="canonical" href="/projects/motionplanning.html">
+<link rel="canonical" href="/projects/cartpole.html">
         <!-- Load Core and Bootstrap JS -->
 <!-- TODO: figure out SHA for popper and jquery -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -102,23 +102,23 @@
             <!-- page.html -->
 <div class="post">
     <header class="post-header">
-    <h3 class="post-title">Neural Network-based Algorithms for Motion Planning</h3>
+    <h3 class="post-title">CartpoleNet</h3>
     
-    <p class="post-description">A CSE 571 Class Project to replicate the Motion Planning Networks paper.</p>
+    <p class="post-description">A CSE 571 Project, and my first experience with Deep Learning.</p>
     
     
     </header>
 
     <article>
         <div class="post post-footer">
-            <p><img src="/assets/images/projects/motionplanning.png" alt="motion planning non-holonomic" class="blog-img" /></p>
+            <p><img src="/assets/images/projects/cartpole.png" alt="Cartpole Dyanmics Prediction" class="blog-img" /></p>
 
 <h2 id="introduction">Introduction</h2>
-
-<p>Existing path planning methods, such as A* and Rapidly-exploring Random Trees (RRT), are known to provide collision-free paths from a start state to a goal state. However such methods become computationally expensive in high dimensional planning spaces. Recent work in this area has shown neural networks to be a viable and computationally inexpensive alternative to such traditional motion planning methods. In this report, we explore neural network-based algorithms that imitate these path planning algorithms. Specifically, we present two neural network architectures and consider three neural network-based planning algorithms. We demonstrate the applications of these planning algorithms on a holonomic point robot in a grid world and on a car-like robot with non-holonomic constraints in a continuous 2D plane. We then evaluate these algorithms on a variety of maps and present the results.</p>
+<p>In this project, we present 4 convolutional neural networks capable of solving the inverse dynamics problem. These neural networks can be used to predict the delta states of a cartpole trajectory at a time step t, given a sequence of images preceding that time step and an image following the time step. We present several neural network architectures to perform a comparative study of how different hyperparameter choices can affect performance.</p>
 
 <h2 id="final-report">Final Report:</h2>
-<p><a href="https://nakuramino.github.io/assets/pdf/CSE_571_Project_2_Final_Report.pdf">Link</a></p>
+
+<p><a href="https://nakuramino.github.io/assets/pdf/CSE_571_Project_1_Final_Report.pdf">Link</a></p>
 
         </div>
     </article>
