@@ -5,7 +5,7 @@
             {% for post in site.news reversed limit:5 %}
             <tr>
                 <th scope="row">{{ post.date | date: "%b %-d, %Y" }}</th>
-                <td>{{ post.content | remove: '<p>' | remove: '</p>' | emojify }}</td>
+                <td>{{ post.content | remove: '<p>' | remove: '</p>' }}</td>
             </tr>
             {% endfor %}
         </table>

@@ -2,12 +2,10 @@
 layout: about
 title: About
 permalink: /
-# description: Deputy Derp
 news: true
 profile:
     image: profile.jpg
 ---
-
 
 Hi, I’m Mino. I like working on cool things with cool people. I’m currently working as a Software Engineer at [Starfish Space](https://www.starfishspace.com/).
 

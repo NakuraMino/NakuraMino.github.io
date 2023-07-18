@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Chess
-description: Logging my chess journey and posting subpar chess analysis
+description: If you don't play chess, this blog will make no sense to you.
 header: Chess
 permalink: /chess
 ---

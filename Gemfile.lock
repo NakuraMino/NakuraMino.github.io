@@ -255,6 +255,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll
+  jemoji
   webrick (~> 1.8)
 
 BUNDLED WITH

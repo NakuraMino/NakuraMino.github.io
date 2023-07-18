@@ -18,6 +18,9 @@ navbar_fixed: true
 url: nakuramino.github.io
 baseurl: /
 
+plugins: 
+  - jemoji
+
 # library versions
 academicons:
   version: "1.8.6"
