@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Universal Function Approximation Theorem
+title: The Universal Approximation Theorem
 icon: fn_approx_icon.gif
 date: 2023-07-08
 # description: How do neural networks actually work? Really really really really long desciption
