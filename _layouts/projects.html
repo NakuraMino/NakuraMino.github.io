@@ -20,7 +20,7 @@ layout: default
                 {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
                 {% for project in sorted_projects %}
                 {% if project.ready %}
-                <div class="card hoverable mb-2 mr-2 rounded data-zoomable">
+                <div class="card hoverable mb-2 mr-2 rounded">
                         <img class="card-img-top img-wrap" src="{{ project.icon | prepend: '/assets/images/projects/' | relative_url }}">
                     <div class="card-body">
                         <h5 class="card=title">

@@ -21,9 +21,10 @@ permalink: /chess
                             <p> {{ post.description }} </p>
                             {% endif %}
                         </div>
-                        <div class="col">
-                            <img class="img-fluid z-depth-1 rounded" src="{{ post.icon | prepend: '/assets/images/chess/' | relative_url }}">
-                        </div>
+                        {%- assign icon_path = post.icon | prepend: '/assets/images/chess/' -%}
+                        {%- assign icon_class = 'icon img-fluid z-depth-1 rounded' -%}
+                        {%- assign max_height = '70px' -%}
+                        <div class="float-right col-sm-2"> {% include image.html path=icon_path class=icon_class max-height=max_height%} </div>
                     </div>
                 </div>
             </ul>
