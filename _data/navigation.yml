@@ -2,7 +2,7 @@
   link: /
 - name: projects
   link: /projects
-- name: blog
-  link: /blog
+# - name: blog
+#   link: /blog
 - name: chess
   link: /chess
